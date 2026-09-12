@@ -18,7 +18,7 @@ export default function PromoBanners() {
           <div>
             <h2
               className={`text-3xl mb-3 ${
-                theme === "dark" ? "text-cyan-300" : "text-indigo-950"
+                theme === "dark" ? "text-indigo-500" : "text-indigo-950"
               }`}
             >
               Free Delivery

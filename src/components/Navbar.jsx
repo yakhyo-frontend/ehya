@@ -9,21 +9,24 @@ export default function Navbar() {
     <header
       className={`sticky top-0 z-999 border-b transition-colors duration-300 ${
         theme === "dark"
-          ? "bg-slate-900/90 border-slate-800 backdrop-blur-2xl text-white"
-          : "bg-white/90 border-gray-200 backdrop-blur-2xl text-gray-900"
+          ? "bg-slate-900 border-slate-800 backdrop-blur-2xl text-slate-200"
+          : "bg-white border-gray-200 backdrop-blur-2xl text-slate-900"
       }`}
     >
       <div className="w-[1220px] mx-auto px-4 h-16 flex items-center justify-between">
-        <h1 className="text-2xl font-black tracking-wider">
-          ehya<span className="text-indigo-500">.</span>
+        <h1
+          className={`text-2xl font-black tracking-wider ${theme === "dark" ? "text-slate-200" : "text-slate-700"}`}
+        >
+          ehya
+          <span className="text-indigo-500">.</span>
         </h1>
 
-        <nav className="hidden md:block">
+        <nav>
           <ul className="flex items-center gap-8 text-sm font-semibold tracking-wide">
             <li>
               <a
                 href="#HOME"
-                className="hover:text-indigo-500 transition-colors duration-200"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-500 after:transition-all hover:after:w-full"
               >
                 HOME
               </a>
@@ -31,7 +34,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#LANDING"
-                className="hover:text-indigo-500 transition-colors duration-200"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-500 after:transition-all hover:after:w-full"
               >
                 LANDING
               </a>
@@ -39,7 +42,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#PAGES"
-                className="hover:text-indigo-500 transition-colors duration-200"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-500 after:transition-all hover:after:w-full"
               >
                 PAGES
               </a>
@@ -47,7 +50,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#DOCS"
-                className="hover:text-indigo-500 transition-colors duration-200"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-500 after:transition-all hover:after:w-full"
               >
                 DOCS
               </a>
@@ -55,7 +58,7 @@ export default function Navbar() {
             <li>
               <a
                 href="#HELP"
-                className="hover:text-indigo-500 transition-colors duration-200"
+                className="relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-indigo-500 after:transition-all hover:after:w-full"
               >
                 HELP
               </a>
@@ -68,7 +71,7 @@ export default function Navbar() {
           className={`p-2 rounded-xl border transition-all ${
             theme === "dark"
               ? "bg-slate-800 border-slate-700 text-amber-400 hover:bg-slate-700"
-              : "bg-gray-100 border-gray-200 text-slate-700 hover:bg-gray-200"
+              : "bg-slate-100 border-slate-300 text-slate-700 hover:bg-slate-300"
           }`}
         >
           {theme === "dark" ? (
