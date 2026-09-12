@@ -46,7 +46,7 @@ export default function Hero() {
         <div className="w-[50%] flex justify-center">
           <img
             src="https://koolkishan.github.io/react-ecommerce/static/media/home.629de4aa7e8ce767acf4.png"
-            alt="Hero Illustration"
+            alt="Hero img"
             className="max-w-[50%] object-contain"
           />
         </div>
